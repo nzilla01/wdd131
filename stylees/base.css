@@ -59,7 +59,7 @@
     background-color: white;
   }
   
-  #about {
+  h2 {
     background-color: var(--header);
     color: var(--neutral);
     text-align: center;
