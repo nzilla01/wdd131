@@ -118,6 +118,7 @@
     color: var(--neutral);
     padding: 1rem;
     font-size: 0.875rem;
+    overflow: hidden;
   }
   #date{
     color:var(--text-highlight)
