@@ -73,6 +73,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2), -5px -5px 6px rgba(0, 0, 0, 0.2);
   }
   .about_para{
     grid-column: span 2;
@@ -83,6 +84,8 @@
     width: 90%;
     border-radius: 3px;
     grid-row: span 2;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2), -5px -5px 6px rgba(0, 0, 0, 0.2);
+
   }
   .nig{
     grid-column: span 2;
@@ -98,6 +101,9 @@
     
   }
   
+  #resource {
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2), -5px -5px 6px rgba(0, 0, 0, 0.2);
+  }
   #resource ul {
     padding-left: 1rem;
     line-height: 2rem;
@@ -120,7 +126,7 @@
     font-size: 0.875rem;
     overflow: hidden;
   }
-  #date{
+  #lastModified{
     color:var(--text-highlight)
   }
   
