@@ -11,6 +11,7 @@
     --nav: #333333;
     --footer-text: #6b8166;
     --text-highlight: #f2ea59;
+    --active:#643219;
   }
   
   /* Header Section */
@@ -42,6 +43,11 @@
     color: var(--neutral);
     text-decoration: none;
     font-weight: bold;
+  }
+
+  nav #nav li a:hover{
+    background: var(--active);
+    padding: 10px;
   }
   
   /* Section Styling */
