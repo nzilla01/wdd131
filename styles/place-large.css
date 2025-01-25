@@ -37,7 +37,6 @@
             align-items: center;
             background: #1B7339;
             border-radius: 210px;
-          
         }
         .data{
             position: absolute;
@@ -60,11 +59,12 @@
            background: rgba(0, 0, 0, 0.5);
            color:var(--neutral)
         }
-        #weather{
-            width:50px;
-           
-            
-        }
+        .weather h3::after{
+            content: url("/images/weather.svg");
+            width:30px;
+            position: relative;
+            top:15px
+            }
         footer {
             text-align: center;
             background-color: var(--header);
