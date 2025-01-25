@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @media screen and (max-width:760px) {
 
 *{
@@ -38,6 +39,9 @@ h3{
     align-items: center;
     gap: 8px;
 } 
+#svg{
+    width: 50px;
+}
 .data{
     line-height: 2rem;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
@@ -47,13 +51,6 @@ h3{
     line-height: 2rem;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
     margin: 2rem 2px;
-}
-.weather h3::after{
-    content: url("../images/weather.svg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 5px; 
-    
 }
 footer {
     text-align: center;
