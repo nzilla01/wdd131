@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Okon Nsikak">
+  <meta name="description" content="WDD 131 - Responsive Web Design by Okon Nsikak on about my country Nigeria.">
+  <title>WDD 131 - About Place - Okon Nsikak</title>
+  <link rel="stylesheet" href="./styles/place.css">
+  <link rel="stylesheet" href="./styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1> Nigeria </h1>
+    </header>
+
+    <nav></nav>
+
+    <main>
+        <picture>
+            <source media="(max-width:400px)" srcset="./images/images.webp">
+            <source media= "(min-width: 800px)" srcset="./images/nigeria.webp">
+            <img src="./images/images.webp" id="culture" alt="Nigerian culture">
+        </picture>
+
+        <section class="data">
+            <h3> Data </h3>
+            <ul>
+                <li> <b>Area:</b> 910,770 sq km  </li>
+                <li> <b>Population:</b> 232,679,478  </li>
+                <li> <b>Capital:</b> Abuja</li>
+                <li><b> Language:</b> English</li>
+                <li><b>Currency:</b> Naria</li>
+                <li><b>Time Zone:</b> GMT+1 </li>
+                <li><b>Calling code:</b> +234 </li>
+                <li><b> Internet TLD :</b> .ng </li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h3> weather <span> <img src="./images/weather-svg.svg" id="weather" alt="weather"> </span></h3>
+            <ul>
+                <li><b> Temperature:</b>  25°C </li>
+                <li><b> Condition:</b> Sunny </li>
+                <li><b> Wind:</b>  5km/h </li>
+                <li><b> Windchill:</b>  27.5°C </li>    
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 🌸 Okon Nsikak 🌸 Nigeria, Akwa Ibom State<br>
+         <span id="lastModified"></span>
+    </footer>
+    <script src="./scripts/weather.js" defer></script>
+    
+</body>
+</html>
