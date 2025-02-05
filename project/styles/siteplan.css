@@ -1,0 +1,108 @@
+:root {
+  --header: #1F3A47; /* Dark Blue - Header, Footer, Navigation */
+  --nav: #333333;
+  --footer-text: #D3D3D3; /* Light Gray */
+  --text-highlight: #D9782D; /* Burnt Orange - Price Tags, Buttons */
+  --neutral: #FFFFFF; /* White Background */
+  --active: #000000; /* Black for Text */
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--neutral);
+  color: var(--active);
+}
+
+/* Header */
+header {
+  background-color: var(--header);
+  color: var(--neutral);
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--nav);
+  color: var(--neutral);
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.section {
+  background: var(--neutral);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: var(--neutral);
+  background-color: var(--header);
+  padding: 15px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.section p {
+  margin: 0.5rem 0;
+}
+
+/* Price Tags */
+.price {
+  background-color: var(--text-highlight);
+  color: var(--active);
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--header);
+  color: var(--footer-text);
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#desktop {
+  width: 300px;
+  height: auto;
+}
+
+#mobile {
+  width: 150px;
+}
