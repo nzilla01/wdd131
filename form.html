@@ -9,75 +9,69 @@
   <title>WDD 131 - Dynamic Web Fundamentals - Okon Nsikak</title>
   <link rel="stylesheet" href="styles/form.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <header>
-    <h1> Product review </h1>
+    <h1>Product Review</h1>
   </header>
   <main>
- <form method="get" action="review.html">
-    <select name="product" id="product" required>
-        <option disabled selected> --Select a product-- </option>
-    </select>
+    <form method="get" action="review.html">
+      <label for="product"><strong>Select a product:</strong></label>
+      <select name="product" id="product" required>
+        <option disabled selected>--Select a product--</option>
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+      </select>
 
-    <div class="rating">  <h3>Over all Rating</h3>
+      <div class="rating">
+        <h3>Overall Rating</h3>
         <input type="radio" name="stars" id="star-a" value="5"/>
-        <label for="star-a"> 
-
-        </label>
-  
+        <label for="star-a"></label>
+        
         <input type="radio" name="stars" id="star-b" value="4"/>
         <label for="star-b"></label>
-    
+        
         <input type="radio" name="stars" id="star-c" value="3"/>
         <label for="star-c"></label>
-    
+        
         <input type="radio" name="stars" id="star-d" value="2"/>
         <label for="star-d"></label>
-    
+        
         <input type="radio" name="stars" id="star-e" value="1"/>
         <label for="star-e"></label>
-  </div>
+      </div>
 
-  <label for="date"><strong> Date of installation</strong>
-    <input type="date" name="date" id="date" required> 
-  </label>
+      <label for="date"><strong>Date of Installation:</strong></label>
+      <input type="date" name="date" id="date" required> 
 
-  <div class="feature">
-    <p>which feature did you find usefull in the product 
-    (check all that apply)</p> 
-    <input type="checkbox" name="feature" id="feature-a" value="price"/>
-    <label for="feture"> <b> Durablility </b></label><br>
+      <div class="feature">
+        <p>Which features did you find useful in the product? (Check all that apply)</p>
+        <input type="checkbox" name="feature" id="feature-a" value="durability"/>
+        <label for="feature-a"><b>Durability</b></label><br>
 
-    <input type="checkbox" name="feature" id="feature-b" value="price"/>
-    <label for="feature"> <b>easy use</b></label><br>
+        <input type="checkbox" name="feature" id="feature-b" value="easy-use"/>
+        <label for="feature-b"><b>Easy Use</b></label><br>
 
-    <input type="checkbox" name="feature" id="feature-c" value="price"/>    
-    <label for="feature"><b>performace</b> </label> <br>
+        <input type="checkbox" name="feature" id="feature-c" value="performance"/>    
+        <label for="feature-c"><b>Performance</b></label><br>
 
-    <input type="checkbox" name="feature" id="feature-d" value="price"/>
-    <label for="feature"> <b> Design </b> </label> <br>
-  </div>
+        <input type="checkbox" name="feature" id="feature-d" value="design"/>
+        <label for="feature-d"><b>Design</b></label><br>
+      </div>
 
-  <label for="review"><strong>  Written Review </strong> <span id="span">(optional)</span>
-    <textarea name="review" id="review" required></textarea>
-  </label>
+      <label for="review"><strong>Written Review:</strong> <span id="span">(optional)</span></label>
+      <textarea name="review" id="review"></textarea>
 
-    <lable for="name"> <strong> your name:</strong><span id="span">(optional)</span>
-        <input type="text" name="name" id="name" placeholder="Enter your name">
-    </lable>
+      <label for="name"><strong>Your Name:</strong> <span22 id="span">(optional)</span></label>
+      <input type="text" name="name" id="name" placeholder="Enter your name">
 
-    <input type="submit" value="Post Review" id="submit">
-
-  </form>
+      <input type="submit" value="Post Review" id="submit">
+    </form>
   </main>
-
-
 
   <footer>
     &copy; 2024 🌸 Okon Nsikak 🌸 Nigeria, Akwa Ibom State<br>
-     <span id="lastModified"></span>
+    <span id="lastModified"></span>
   </footer>
   <script src="scripts/form.js" defer></script>
   <script src="scripts/getdate.js" defer></script>
