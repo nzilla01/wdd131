@@ -11,7 +11,9 @@
     --text-highlight: #f2ea59;
     --active:#643219;
 }
-
+.congrats{
+  font-size: 2rem;
+}
 @media screen and (max-width: 768px){
    .logo{
     display:flex;

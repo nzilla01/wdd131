@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --neutral: #dfdfd8;
+    --header: #174e70;
+    --nav: #333333;
+    --footer-text: #6b8166;
+    --text-highlight: #f2ea59;
+    --active:#643219;
+}
+header{
+    background: var(--header);
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    color: var(--neutral);
+}
+
+main{
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0.5rem;  
+}
+input[type="text"], input[type="date"]{  
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom:1rem;
+    font-size: 1rem;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+background-color: var(--active);
+    color: var(--neutral);
+    font-size: 1rem;
+    cursor: pointer;
+}
+#review{
+    width: 100%;
+    min-height: 5rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+#span{
+    color: royalblue;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between stars */
+    width: fit-content;
+    margin: 40px auto;
+    position: relative;
+}
+
+/* Hide the default radio buttons */
+.rating input {
+    display: none;
+}
+
+
+.rating label {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ccc; /* Default color */
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ff69b4;
+}
+
+.rating label:active {
+    transform: scale(1.2);
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+
+.rating label::before {
+    content: '\2606'; /* Hollow star */
+}
+
+
+.rating input:checked ~ label:before {
+    content: '\2605'; 
+}
+
+    
+.feature{
+    padding: 10px;
+    margin-bottom: 1rem;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+footer{
+    background: var(--header);
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    color: var(--neutral);
+}
