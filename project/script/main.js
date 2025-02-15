@@ -1,3 +1,5 @@
+console.log("Script loaded successfully!");
+
 document.addEventListener("DOMContentLoaded", function () {
     // --- NAVBAR TOGGLE ---
     let navBar = document.querySelector(".navbar");
@@ -40,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 termsAccepted
             };
 
-            // Save to local storage (use the same key)
+            // Save to local storage
             localStorage.setItem("userData", JSON.stringify(userData));
 
             alert("Registration successful! Redirecting...");
@@ -50,24 +52,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- RETRIEVE DATA FOR registered.html ---
-    const userData = JSON.parse(localStorage.getItem("userData"));
+    // --- RETRIEVE DATA ONLY IF ON registered.html ---
+    if (window.location.pathname.includes("registered.html")) {
+        const userData = JSON.parse(localStorage.getItem("userData"));
 
-    if (userData) {
-        let displayUsername = document.getElementById("displayUsername");
-        let displayEmail = document.getElementById("displayEmail");
+        if (userData) {
+            let displayUsername = document.getElementById("displayUsername");
+            let displayEmail = document.getElementById("displayEmail");
 
-        displayUsername.textContent = userData.username;
-        displayEmail.textContent = userData.email;
+            if (displayUsername) displayUsername.textContent = userData.username;
+            if (displayEmail) displayEmail.textContent = userData.email;
+        } else {
+            console.log("No user data found.");
+        }
     }
-    else{
-        console.log( "registratuon")
-    }
+    // --- CART COUNTER ---
+    let cartCount = 0;
+    const cartCountDisplay = document.querySelector(".cart-count"); 
+    const addToCartButtons = document.querySelectorAll(".product button"); 
 
+    addToCartButtons.forEach((button, index) => {
+
+        button.addEventListener("click", function () {
+            cartCount++;
+            cartCountDisplay.textContent = cartCount; 
+            cartCountDisplay.style.visibility = "visible"; 
+        });
+    });
+
+    // --- LAST MODIFIED DATE ---
+    let lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
+    }
 });
 
- // --- LAST MODIFIED DATE ---
- let lastModifiedElement = document.getElementById("lastModified");
- if (lastModifiedElement) {
-     lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
- }

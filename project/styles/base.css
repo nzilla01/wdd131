@@ -47,7 +47,9 @@
   transform: translateY(10px) rotate(45deg);
   transition: 0.3s;
 }
-
+.cart-container{
+  visibility: hidden;
+}
 .bars.times .bar2 {
   opacity: 0; /* Hide the middle bar */
   transition: 0.3s;

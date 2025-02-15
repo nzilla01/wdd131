@@ -38,6 +38,36 @@
          border-radius: 200px;
          border: none;
    }
+   .cart-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: 20px;
+  }
+  
+  .cart-icon {
+      font-size: 1.8rem;
+  }
+  
+  .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background: red;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: bold;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      visibility: hidden; 
+  }
+  
    nav{
     display: none;
    }
