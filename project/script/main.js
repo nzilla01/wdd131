@@ -1,6 +1,6 @@
-console.log("Script loaded successfully!");
 
 document.addEventListener("DOMContentLoaded", function () {
+    
     // --- NAVBAR TOGGLE ---
     let navBar = document.querySelector(".navbar");
     let bar = document.querySelector(".bars");
