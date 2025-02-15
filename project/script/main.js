@@ -64,9 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log( "registratuon")
     }
 
-    // --- LAST MODIFIED DATE ---
-    let lastModifiedElement = document.getElementById("lastModified");
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
-    }
 });
+
+ // --- LAST MODIFIED DATE ---
+ let lastModifiedElement = document.getElementById("lastModified");
+ if (lastModifiedElement) {
+     lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
+ }
